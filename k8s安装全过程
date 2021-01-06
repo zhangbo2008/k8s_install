@@ -1,6 +1,7 @@
 
 
 
+
 2021-01-05,17点39
 
 
@@ -56,7 +57,9 @@
 #############--------------------------------------#########################################
 	再重新来.# 在本地部署分布式k8s
 
+	yum -y install net-tools
 
+	ifconfig  # 记住 ip地址.
 
 
 	下面直接跑下面shell到reboot即可!
@@ -281,5 +284,6 @@ kubectl get all -n kube-system
 
 # kubeadm join 192.168.91.138:6443 --token a8o46l.6gf95emt2itik04h \
 #    --discovery-token-ca-cert-hash sha256:675cced37449e89e6c9994b30c1f7c8cb2d66b1e231e0b31a3d170f63be6b06e 
+
 
 
